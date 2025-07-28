@@ -6,7 +6,12 @@
   <title>catatankelas</title>
 </head>
 <body>
-  <h1>halo</h1>
-  <h2>hai</h2>
+  <h1>Catatan Kelas</h1>
+  <p>Selamat datang di halaman Catatan Kelas!</p>
+  <p>Silakan pilih opsi di bawah ini:</p>
+  <ul>
+    <li><a href="{{ route('absensi.create') }}">Tambah Absensi</a></li>
+    <li><a href="{{ route('absensi.index') }}">Lihat Daftar Absensi</a></li>
+  </ul>
 </body>
 </html>
