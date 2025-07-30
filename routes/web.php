@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AbsensiController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -10,6 +11,10 @@ Route::get('/', function () {
 Route::get('/catatankelas', function () {
     return view('catatankelas');
 });
+
+Route::get('/absensi', [AbsensiController::class, 'index'])->name('absensi.index');
+Route::get('/absensi/create', [AbsensiController::class, 'create'])->name('absensi.create');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
