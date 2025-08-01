@@ -14,7 +14,7 @@ Route::get('/catatankelas', function () {
 
 Route::get('/absensi', [AbsensiController::class, 'index'])->name('absensi.index');
 Route::get('/absensi/create', [AbsensiController::class, 'create'])->name('absensi.create');
-
+Route::post('/absensi', [AbsensiController::class, 'store'])->name('absensi.store');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
