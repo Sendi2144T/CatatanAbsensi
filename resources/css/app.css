@@ -40,11 +40,13 @@
 }
 
 [data-flux-field]:not(ui-radio, ui-checkbox) {
-    @apply grid gap-2;
+    display: grid;
+    gap: 0.5rem;
 }
 
 [data-flux-label] {
-    @apply  !mb-0 !leading-tight;
+    margin-bottom: 0 !important;
+    line-height: 1.25 !important;
 }
 
 [data-flux-field]:not(ui-radio, ui-checkbox) {
