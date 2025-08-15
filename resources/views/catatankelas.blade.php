@@ -16,12 +16,12 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($absensis as $absensi)
+            @foreach($catatankelas as $catatankelas)
                 <tr>
-                    <td>{{ $absensi->user->name }}</td>
-                    <td>{{ $absensi->tanggal }}</td>
-                    <td>{{ $absensi->status }}</td>
-                    <td>{{ $absensi->keterangan }}</td>
+                    <td>{{ $catatankelas->tanggal }}</td>
+                    <td>{{ $catatankelas->status }}</td>
+                    <td>{{ $catatankelas->keterangan }}</td>
+                    <td>{{ $catatankelas->user->name }}</td>
                 </tr>
             @endforeach
         </tbody>
